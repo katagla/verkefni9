@@ -8,10 +8,13 @@
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="node_modules/leaflet/dist/leaflet.css">
 </head>
-<body>
+<body><script id="__bs_script__">//<![CDATA[
+    document.write("<script async src='/browser-sync/browser-sync-client.js?v=2.26.13'><\/script>".replace("HOST", location.hostname));
+//]]></script>
+
   <div class="wrapper">
     <div class="earthquakes-container">
-      <h1>Jarðskjálftar 4,5+ á richter seinustu 30 daga</h1>
+      <h1>Jarðskjálftar 4,5+ á richter seinustu 7 daga</h1>
       <p class="loading">Hleð gögnum...</p>
       <ul class="earthquakes">
 
@@ -38,7 +41,7 @@
       </footer>
     </div>
     <div class="map-container">
-      <div class="map"></div>
+      <div class="map" id="mapid"></div>
     </div>
   </div>
   <script src="./dist/bundle.js"></script>
